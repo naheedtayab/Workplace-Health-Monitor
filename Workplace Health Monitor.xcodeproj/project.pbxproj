@@ -14,6 +14,9 @@
 		61841D6D2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D6C2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift */; };
 		61841D772B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D762B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift */; };
 		61841D792B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */; };
+		61841D872B06C77B00AA90DC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61841D862B06C77B00AA90DC /* CoreMotion.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		61841D892B06C87100AA90DC /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D882B06C87100AA90DC /* ActivityViewModel.swift */; };
+		61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,11 @@
 		61841D722B06C2F300AA90DC /* Workplace Health MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workplace Health MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61841D762B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorUITests.swift; sourceTree = "<group>"; };
 		61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61841D862B06C77B00AA90DC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		61841D882B06C87100AA90DC /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Workplace-Health-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
+		61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Workplace Health Monitor.entitlements"; sourceTree = "<group>"; };
+		61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61841D872B06C77B00AA90DC /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,7 @@
 				61841D6B2B06C2F300AA90DC /* Workplace Health MonitorTests */,
 				61841D752B06C2F300AA90DC /* Workplace Health MonitorUITests */,
 				61841D592B06C2F200AA90DC /* Products */,
+				61841D852B06C77B00AA90DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +104,14 @@
 		61841D5A2B06C2F200AA90DC /* Workplace Health Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */,
+				61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */,
 				61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */,
 				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
+				61841D882B06C87100AA90DC /* ActivityViewModel.swift */,
 				61841D5F2B06C2F300AA90DC /* Assets.xcassets */,
 				61841D612B06C2F300AA90DC /* Preview Content */,
+				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
 			);
 			path = "Workplace Health Monitor";
 			sourceTree = "<group>";
@@ -125,6 +139,14 @@
 				61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */,
 			);
 			path = "Workplace Health MonitorUITests";
+			sourceTree = "<group>";
+		};
+		61841D852B06C77B00AA90DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61841D862B06C77B00AA90DC /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			files = (
 				61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */,
 				61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */,
+				61841D892B06C87100AA90DC /* ActivityViewModel.swift in Sources */,
+				61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +443,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Workplace Health Monitor/Workplace Health Monitor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Workplace Health Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = U66368G9AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Workplace-Health-Monitor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,11 +474,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Workplace Health Monitor/Workplace Health Monitor.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Workplace Health Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = U66368G9AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Workplace-Health-Monitor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
