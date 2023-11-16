@@ -8,7 +8,8 @@
 	</array>
     <key>NSHealthShareUsageDescription</key>
     <string>This app requires access to your step count data to track your daily activity.</string>
-
+    <key>NSMotionUsageDescription</key>
+    <string>We need access to motion data to count your steps and encourage physical activity.</string>
     <key>NSHealthUpdateUsageDescription</key>
     <string>This app needs to save your workout data to HealthKit for comprehensive health tracking.</string>
 

@@ -107,11 +107,11 @@
 				61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */,
 				61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */,
 				61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */,
+				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
 				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
 				61841D882B06C87100AA90DC /* ActivityViewModel.swift */,
 				61841D5F2B06C2F300AA90DC /* Assets.xcassets */,
 				61841D612B06C2F300AA90DC /* Preview Content */,
-				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
 			);
 			path = "Workplace Health Monitor";
 			sourceTree = "<group>";
