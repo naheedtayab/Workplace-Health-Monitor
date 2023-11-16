@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */; };
+		61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D5D2B06C2F200AA90DC /* ContentView.swift */; };
+		61841D602B06C2F300AA90DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61841D5F2B06C2F300AA90DC /* Assets.xcassets */; };
+		61841D632B06C2F300AA90DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61841D622B06C2F300AA90DC /* Preview Assets.xcassets */; };
+		61841D6D2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D6C2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift */; };
+		61841D772B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D762B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift */; };
+		61841D792B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61841D692B06C2F300AA90DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61841D502B06C2F200AA90DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61841D572B06C2F200AA90DC;
+			remoteInfo = "Workplace Health Monitor";
+		};
+		61841D732B06C2F300AA90DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61841D502B06C2F200AA90DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61841D572B06C2F200AA90DC;
+			remoteInfo = "Workplace Health Monitor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61841D582B06C2F200AA90DC /* Workplace Health Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workplace Health Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorApp.swift; sourceTree = "<group>"; };
+		61841D5D2B06C2F200AA90DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61841D5F2B06C2F300AA90DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61841D622B06C2F300AA90DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61841D682B06C2F300AA90DC /* Workplace Health MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workplace Health MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61841D6C2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorTests.swift; sourceTree = "<group>"; };
+		61841D722B06C2F300AA90DC /* Workplace Health MonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workplace Health MonitorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61841D762B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorUITests.swift; sourceTree = "<group>"; };
+		61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61841D552B06C2F200AA90DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D652B06C2F300AA90DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D6F2B06C2F300AA90DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61841D4F2B06C2F200AA90DC = {
+			isa = PBXGroup;
+			children = (
+				61841D5A2B06C2F200AA90DC /* Workplace Health Monitor */,
+				61841D6B2B06C2F300AA90DC /* Workplace Health MonitorTests */,
+				61841D752B06C2F300AA90DC /* Workplace Health MonitorUITests */,
+				61841D592B06C2F200AA90DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61841D592B06C2F200AA90DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61841D582B06C2F200AA90DC /* Workplace Health Monitor.app */,
+				61841D682B06C2F300AA90DC /* Workplace Health MonitorTests.xctest */,
+				61841D722B06C2F300AA90DC /* Workplace Health MonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61841D5A2B06C2F200AA90DC /* Workplace Health Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */,
+				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
+				61841D5F2B06C2F300AA90DC /* Assets.xcassets */,
+				61841D612B06C2F300AA90DC /* Preview Content */,
+			);
+			path = "Workplace Health Monitor";
+			sourceTree = "<group>";
+		};
+		61841D612B06C2F300AA90DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				61841D622B06C2F300AA90DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61841D6B2B06C2F300AA90DC /* Workplace Health MonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				61841D6C2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift */,
+			);
+			path = "Workplace Health MonitorTests";
+			sourceTree = "<group>";
+		};
+		61841D752B06C2F300AA90DC /* Workplace Health MonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61841D762B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift */,
+				61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */,
+			);
+			path = "Workplace Health MonitorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61841D572B06C2F200AA90DC /* Workplace Health Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61841D7C2B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health Monitor" */;
+			buildPhases = (
+				61841D542B06C2F200AA90DC /* Sources */,
+				61841D552B06C2F200AA90DC /* Frameworks */,
+				61841D562B06C2F200AA90DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Workplace Health Monitor";
+			productName = "Workplace Health Monitor";
+			productReference = 61841D582B06C2F200AA90DC /* Workplace Health Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61841D672B06C2F300AA90DC /* Workplace Health MonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61841D7F2B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health MonitorTests" */;
+			buildPhases = (
+				61841D642B06C2F300AA90DC /* Sources */,
+				61841D652B06C2F300AA90DC /* Frameworks */,
+				61841D662B06C2F300AA90DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61841D6A2B06C2F300AA90DC /* PBXTargetDependency */,
+			);
+			name = "Workplace Health MonitorTests";
+			productName = "Workplace Health MonitorTests";
+			productReference = 61841D682B06C2F300AA90DC /* Workplace Health MonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61841D712B06C2F300AA90DC /* Workplace Health MonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61841D822B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health MonitorUITests" */;
+			buildPhases = (
+				61841D6E2B06C2F300AA90DC /* Sources */,
+				61841D6F2B06C2F300AA90DC /* Frameworks */,
+				61841D702B06C2F300AA90DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61841D742B06C2F300AA90DC /* PBXTargetDependency */,
+			);
+			name = "Workplace Health MonitorUITests";
+			productName = "Workplace Health MonitorUITests";
+			productReference = 61841D722B06C2F300AA90DC /* Workplace Health MonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61841D502B06C2F200AA90DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					61841D572B06C2F200AA90DC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					61841D672B06C2F300AA90DC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 61841D572B06C2F200AA90DC;
+					};
+					61841D712B06C2F300AA90DC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 61841D572B06C2F200AA90DC;
+					};
+				};
+			};
+			buildConfigurationList = 61841D532B06C2F200AA90DC /* Build configuration list for PBXProject "Workplace Health Monitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61841D4F2B06C2F200AA90DC;
+			productRefGroup = 61841D592B06C2F200AA90DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61841D572B06C2F200AA90DC /* Workplace Health Monitor */,
+				61841D672B06C2F300AA90DC /* Workplace Health MonitorTests */,
+				61841D712B06C2F300AA90DC /* Workplace Health MonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61841D562B06C2F200AA90DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61841D632B06C2F300AA90DC /* Preview Assets.xcassets in Resources */,
+				61841D602B06C2F300AA90DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D662B06C2F300AA90DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D702B06C2F300AA90DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61841D542B06C2F200AA90DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */,
+				61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D642B06C2F300AA90DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61841D6D2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61841D6E2B06C2F300AA90DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61841D792B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift in Sources */,
+				61841D772B06C2F300AA90DC /* Workplace_Health_MonitorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61841D6A2B06C2F300AA90DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61841D572B06C2F200AA90DC /* Workplace Health Monitor */;
+			targetProxy = 61841D692B06C2F300AA90DC /* PBXContainerItemProxy */;
+		};
+		61841D742B06C2F300AA90DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61841D572B06C2F200AA90DC /* Workplace Health Monitor */;
+			targetProxy = 61841D732B06C2F300AA90DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61841D7A2B06C2F300AA90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61841D7B2B06C2F300AA90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61841D7D2B06C2F300AA90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Workplace Health Monitor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61841D7E2B06C2F300AA90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Workplace Health Monitor/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61841D802B06C2F300AA90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workplace Health Monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Workplace Health Monitor";
+			};
+			name = Debug;
+		};
+		61841D812B06C2F300AA90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-MonitorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workplace Health Monitor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Workplace Health Monitor";
+			};
+			name = Release;
+		};
+		61841D832B06C2F300AA90DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Workplace Health Monitor";
+			};
+			name = Debug;
+		};
+		61841D842B06C2F300AA90DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tayab.naheed.Workplace-Health-MonitorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Workplace Health Monitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61841D532B06C2F200AA90DC /* Build configuration list for PBXProject "Workplace Health Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61841D7A2B06C2F300AA90DC /* Debug */,
+				61841D7B2B06C2F300AA90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61841D7C2B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61841D7D2B06C2F300AA90DC /* Debug */,
+				61841D7E2B06C2F300AA90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61841D7F2B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health MonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61841D802B06C2F300AA90DC /* Debug */,
+				61841D812B06C2F300AA90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61841D822B06C2F300AA90DC /* Build configuration list for PBXNativeTarget "Workplace Health MonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61841D832B06C2F300AA90DC /* Debug */,
+				61841D842B06C2F300AA90DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61841D502B06C2F200AA90DC /* Project object */;
+}
