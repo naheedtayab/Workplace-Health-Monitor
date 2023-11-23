@@ -61,3 +61,10 @@ struct StepCounterView_Previews: PreviewProvider {
         StepCounterView()
     }
 }
+
+//#Preview {
+//    TabView {
+//        StepCounterView()
+//            .tabItem { Label("Steps", systemImage: "list.bullet") }
+//    }
+//}

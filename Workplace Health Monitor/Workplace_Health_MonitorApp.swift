@@ -11,7 +11,7 @@ import SwiftUI
 struct Workplace_Health_MonitorApp: App {
     var body: some Scene {
         WindowGroup {
-            StepCounterView()
+            MainView()
         }
     }
 }
