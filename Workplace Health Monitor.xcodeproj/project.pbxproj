@@ -18,6 +18,8 @@
 		61841D872B06C77B00AA90DC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61841D862B06C77B00AA90DC /* CoreMotion.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		61841D892B06C87100AA90DC /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D882B06C87100AA90DC /* ActivityViewModel.swift */; };
 		61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */; };
+		61A84E012B194E2500F6078C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A84E002B194E2500F6078C /* HomeView.swift */; };
+		61A84E072B1965C500F6078C /* ActivityTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +53,11 @@
 		61841D782B06C2F300AA90DC /* Workplace_Health_MonitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61841D862B06C77B00AA90DC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		61841D882B06C87100AA90DC /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
-		61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Workplace-Health-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
+		61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Workplace-Health-Monitor-Info.plist"; path = "Workplace Health Monitor/Workplace-Health-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
 		61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Workplace Health Monitor.entitlements"; sourceTree = "<group>"; };
 		61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterView.swift; sourceTree = "<group>"; };
+		61A84E002B194E2500F6078C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTrackerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +110,11 @@
 		61841D5A2B06C2F200AA90DC /* Workplace Health Monitor */ = {
 			isa = PBXGroup;
 			children = (
-				61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */,
 				61841D8D2B06CB6000AA90DC /* Workplace-Health-Monitor-Info.plist */,
-				61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */,
-				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
-				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
-				6132EB9A2B0F97F900263101 /* MainView.swift */,
-				61841D882B06C87100AA90DC /* ActivityViewModel.swift */,
+				61841D8E2B06CE4400AA90DC /* Workplace Health Monitor.entitlements */,
+				61A84DFF2B194CE700F6078C /* ViewModels */,
+				61A84DFD2B194CCD00F6078C /* Views */,
+				61A84DFC2B194C9D00F6078C /* App */,
 				61841D5F2B06C2F300AA90DC /* Assets.xcassets */,
 				61841D612B06C2F300AA90DC /* Preview Content */,
 			);
@@ -150,6 +152,34 @@
 				61841D862B06C77B00AA90DC /* CoreMotion.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61A84DFC2B194C9D00F6078C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		61A84DFD2B194CCD00F6078C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6132EB9A2B0F97F900263101 /* MainView.swift */,
+				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
+				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
+				61A84E002B194E2500F6078C /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61A84DFF2B194CE700F6078C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				61841D882B06C87100AA90DC /* ActivityViewModel.swift */,
+				61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +315,9 @@
 				61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */,
 				61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */,
 				61841D892B06C87100AA90DC /* ActivityViewModel.swift in Sources */,
+				61A84E012B194E2500F6078C /* HomeView.swift in Sources */,
 				6132EB9B2B0F97F900263101 /* MainView.swift in Sources */,
+				61A84E072B1965C500F6078C /* ActivityTrackerViewModel.swift in Sources */,
 				61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +486,7 @@
 				DEVELOPMENT_TEAM = U66368G9AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Workplace-Health-Monitor-Info.plist";
+				INFOPLIST_FILE = "Workplace Health Monitor/Workplace-Health-Monitor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,7 +517,7 @@
 				DEVELOPMENT_TEAM = U66368G9AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Workplace-Health-Monitor-Info.plist";
+				INFOPLIST_FILE = "Workplace Health Monitor/Workplace-Health-Monitor-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

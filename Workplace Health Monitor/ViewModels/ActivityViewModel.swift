@@ -18,7 +18,7 @@ class ActivityViewModel: ObservableObject {
 
     private func startMonitoring() {
         guard CMMotionActivityManager.isActivityAvailable() else {
-            activity = "Motion activity not available."
+            activity = "You have no motion."
             return
         }
 
