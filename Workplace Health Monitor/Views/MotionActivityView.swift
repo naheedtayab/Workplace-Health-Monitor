@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MotionActivityView.swift
 //  Workplace Health Monitor
 //
 //  Created by Naheed on 16/11/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MotionActivityView: View {
     @ObservedObject var viewModel = ActivityViewModel()
     
     var body: some View {
@@ -33,5 +33,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MotionActivityView()
 }

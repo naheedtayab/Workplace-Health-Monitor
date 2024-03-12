@@ -122,7 +122,7 @@ class StepCounterViewModel: ObservableObject {
 
 struct StepCounterView: View {
   @ObservedObject var viewModel = StepCounterViewModel()
-
+    
   var body: some View {
       VStack {
           Text("Steps Today: \(viewModel.stepsToday)")

@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6132EB9B2B0F97F900263101 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6132EB9A2B0F97F900263101 /* MainView.swift */; };
+		6163BBC42B9A038F00A3EF93 /* AccelerometerDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163BBC32B9A038F00A3EF93 /* AccelerometerDataView.swift */; };
+		6163BBC72B9A15F500A3EF93 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6163BBC62B9A15F500A3EF93 /* FirebaseAuth */; };
+		6163BBC92B9A15F500A3EF93 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6163BBC82B9A15F500A3EF93 /* FirebaseFirestore */; };
+		6163BBCB2B9A15F500A3EF93 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6163BBCA2B9A15F500A3EF93 /* FirebaseFirestoreSwift */; };
+		6163BBCD2B9A15F500A3EF93 /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 6163BBCC2B9A15F500A3EF93 /* FirebaseMLModelDownloader */; };
 		61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */; };
-		61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D5D2B06C2F200AA90DC /* ContentView.swift */; };
+		61841D5E2B06C2F200AA90DC /* MotionActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D5D2B06C2F200AA90DC /* MotionActivityView.swift */; };
 		61841D602B06C2F300AA90DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61841D5F2B06C2F300AA90DC /* Assets.xcassets */; };
 		61841D632B06C2F300AA90DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61841D622B06C2F300AA90DC /* Preview Assets.xcassets */; };
 		61841D6D2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D6C2B06C2F300AA90DC /* Workplace_Health_MonitorTests.swift */; };
@@ -20,6 +25,7 @@
 		61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */; };
 		61A84E012B194E2500F6078C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A84E002B194E2500F6078C /* HomeView.swift */; };
 		61A84E072B1965C500F6078C /* ActivityTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */; };
+		61CFFE472B9640010076948C /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CFFE462B9640010076948C /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +47,10 @@
 
 /* Begin PBXFileReference section */
 		6132EB9A2B0F97F900263101 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6163BBC32B9A038F00A3EF93 /* AccelerometerDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDataView.swift; sourceTree = "<group>"; };
 		61841D582B06C2F200AA90DC /* Workplace Health Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workplace Health Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61841D5B2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace_Health_MonitorApp.swift; sourceTree = "<group>"; };
-		61841D5D2B06C2F200AA90DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61841D5D2B06C2F200AA90DC /* MotionActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityView.swift; sourceTree = "<group>"; };
 		61841D5F2B06C2F300AA90DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61841D622B06C2F300AA90DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61841D682B06C2F300AA90DC /* Workplace Health MonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workplace Health MonitorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +65,7 @@
 		61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterView.swift; sourceTree = "<group>"; };
 		61A84E002B194E2500F6078C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTrackerViewModel.swift; sourceTree = "<group>"; };
+		61CFFE462B9640010076948C /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61841D872B06C77B00AA90DC /* CoreMotion.framework in Frameworks */,
+				6163BBC72B9A15F500A3EF93 /* FirebaseAuth in Frameworks */,
+				6163BBCD2B9A15F500A3EF93 /* FirebaseMLModelDownloader in Frameworks */,
+				6163BBC92B9A15F500A3EF93 /* FirebaseFirestore in Frameworks */,
+				6163BBCB2B9A15F500A3EF93 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,9 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				6132EB9A2B0F97F900263101 /* MainView.swift */,
-				61841D5D2B06C2F200AA90DC /* ContentView.swift */,
+				61841D5D2B06C2F200AA90DC /* MotionActivityView.swift */,
 				61841D8F2B06CEDA00AA90DC /* StepCounterView.swift */,
 				61A84E002B194E2500F6078C /* HomeView.swift */,
+				6163BBC32B9A038F00A3EF93 /* AccelerometerDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 			children = (
 				61841D882B06C87100AA90DC /* ActivityViewModel.swift */,
 				61A84E062B1965C500F6078C /* ActivityTrackerViewModel.swift */,
+				61CFFE462B9640010076948C /* MotionManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -198,6 +212,12 @@
 			dependencies = (
 			);
 			name = "Workplace Health Monitor";
+			packageProductDependencies = (
+				6163BBC62B9A15F500A3EF93 /* FirebaseAuth */,
+				6163BBC82B9A15F500A3EF93 /* FirebaseFirestore */,
+				6163BBCA2B9A15F500A3EF93 /* FirebaseFirestoreSwift */,
+				6163BBCC2B9A15F500A3EF93 /* FirebaseMLModelDownloader */,
+			);
 			productName = "Workplace Health Monitor";
 			productReference = 61841D582B06C2F200AA90DC /* Workplace Health Monitor.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 61841D4F2B06C2F200AA90DC;
+			packageReferences = (
+				6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 61841D592B06C2F200AA90DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,13 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61841D5E2B06C2F200AA90DC /* ContentView.swift in Sources */,
+				61841D5E2B06C2F200AA90DC /* MotionActivityView.swift in Sources */,
 				61841D5C2B06C2F200AA90DC /* Workplace_Health_MonitorApp.swift in Sources */,
 				61841D892B06C87100AA90DC /* ActivityViewModel.swift in Sources */,
 				61A84E012B194E2500F6078C /* HomeView.swift in Sources */,
 				6132EB9B2B0F97F900263101 /* MainView.swift in Sources */,
 				61A84E072B1965C500F6078C /* ActivityTrackerViewModel.swift in Sources */,
 				61841D902B06CEDA00AA90DC /* StepCounterView.swift in Sources */,
+				6163BBC42B9A038F00A3EF93 /* AccelerometerDataView.swift in Sources */,
+				61CFFE472B9640010076948C /* MotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +673,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6163BBC62B9A15F500A3EF93 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6163BBC82B9A15F500A3EF93 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6163BBCA2B9A15F500A3EF93 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		6163BBCC2B9A15F500A3EF93 /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6163BBC52B9A15F500A3EF93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61841D502B06C2F200AA90DC /* Project object */;
 }
