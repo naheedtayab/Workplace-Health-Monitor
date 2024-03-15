@@ -1,10 +1,3 @@
-//
-//  StepCounterView.swift
-//  Workplace Health Monitor
-//
-//  Created by Naheed on 16/11/2023.
-//
-
 import Foundation
 import SwiftUI
 import HealthKit

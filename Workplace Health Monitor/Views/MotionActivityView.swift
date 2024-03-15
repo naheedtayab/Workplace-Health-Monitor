@@ -1,10 +1,3 @@
-//
-//  MotionActivityView.swift
-//  Workplace Health Monitor
-//
-//  Created by Naheed on 16/11/2023.
-//
-
 import SwiftUI
 
 struct MotionActivityView: View {

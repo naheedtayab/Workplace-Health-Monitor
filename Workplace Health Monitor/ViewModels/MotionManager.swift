@@ -1,34 +1,48 @@
-//
-//  MotionManager.swift
-//  Workplace Health Monitor
-//
-//  Created by Naheed on 04/03/2024.
-//
-
-import CoreMotion
 import Combine
+import CoreMotion
 
 class MotionManager: ObservableObject {
-    private var motionManager: CMMotionManager
+//    private var motionManager: CMMotionManager
+    private var motionManager: CMMotionManager = .init()
     private var pedometer: CMPedometer
     private let queue = OperationQueue()
+    private var timer: Timer?
     
     @Published var accelerometerData: CMAccelerometerData?
     @Published var isWalking: Bool = false
+    // Placeholder for "sedentary" state
+    @Published var isSedentary: Bool = false
     
     init() {
         self.motionManager = CMMotionManager()
         self.pedometer = CMPedometer()
+        startMotionUpdates()
+    }
+    
+    func startMotionUpdates() {
+        // Start accelerometer updates, for example
+        // This is highly simplified; actual implementation will depend on your needs
+        motionManager.startAccelerometerUpdates(to: .main) { [weak self] data, _ in
+            guard let acceleration = data?.acceleration else { return }
+            
+            // Placeholder logic for determining if currently sedentary
+            // This would instead feed data into your ML model
+            self?.isSedentary = (abs(acceleration.x) + abs(acceleration.y) + abs(acceleration.z)) < 0.05 // Very simplified threshold
+        }
+    }
+    
+    func stopMotionUpdates() {
+        motionManager.stopAccelerometerUpdates()
     }
     
     let threshold: Double = 2.0 // define threshold for checking accelerometer. in this case it's 2g (g = 9.81 m/s^2)
-    
+
     func startSensors() {
         // Start accelerometer updates
         print("working")
         if motionManager.isAccelerometerAvailable {
-            motionManager.accelerometerUpdateInterval = 1.0 / 60.0  // Adjust frequency as needed
-            motionManager.startAccelerometerUpdates(to: queue) { [weak self] (data, error) in
+            motionManager.accelerometerUpdateInterval = 1.0 / 60.0 // Adjust frequency as needed
+            motionManager.startAccelerometerUpdates(to: queue) { [weak self] data, _ in
                 DispatchQueue.main.async {
                     if let acceleration = data?.acceleration {
                         self?.accelerometerData = data
@@ -53,7 +67,7 @@ class MotionManager: ObservableObject {
         
         // Start pedometer updates
         if CMPedometer.isStepCountingAvailable() {
-            pedometer.startUpdates(from: Date()) { [weak self] (pedometerData, error) in
+            pedometer.startUpdates(from: Date()) { [weak self] pedometerData, _ in
                 DispatchQueue.main.async {
                     self?.isWalking = (pedometerData?.numberOfSteps.intValue ?? 0) > 0
                 }
