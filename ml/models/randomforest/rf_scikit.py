@@ -1,5 +1,7 @@
 import sys
 import pandas as pd
+import joblib
+import coremltools
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
@@ -34,6 +36,35 @@ def main():
     accuracy = accuracy_score(y_test, y_pred)
     print(f"Accuracy: {accuracy}")
     print("Classification Report:\n", classification_report(y_test, y_pred))
+
+    # Save the trained Random Forest model to joblib file for CoreML conversion
+    joblib_file = "random_forest_model.joblib"
+    joblib.dump(rf_model, joblib_file)
+    print(f"Model saved to {joblib_file}")
+
+    # Convert the model to CoreML format
+    coreml_model = coremltools.converters.sklearn.convert(
+        rf_model,
+        input_features=[
+            "Acc_X",
+            "Acc_Y",
+            "Acc_Z",
+            "Gyro_X",
+            "Gyro_Y",
+            "Gyro_Z",
+            "Mag_X",
+            "Mag_Y",
+            "Mag_Z",
+            "Barometer",
+            "GPS_Lat",
+            "GPS_Long",
+            "Pedometer",
+        ],
+        output_feature_names=["Activity"],
+    )
+    coreml_model_file = "RandomForestModel.mlmodel"
+    coreml_model.save(coreml_model_file)
+    print(f"CoreML model saved to {coreml_model_file}")
 
 
 if __name__ == "__main__":
