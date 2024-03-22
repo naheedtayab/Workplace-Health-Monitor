@@ -16,31 +16,26 @@ class AuthViewModel: ObservableObject {
 
     func signUp(email: String, password: String) {
         Auth.auth().createUser(withEmail: email, password: password) { _, error in
-            // Handle errors or success
-            func signUp(email: String, password: String) {
-                Auth.auth().createUser(withEmail: email, password: password) { _, error in
-                    if let error = error {
-                        // Handle error
-                        print("Error signing up:", error.localizedDescription)
-                    } else {
-                        // Handle success
-                        print("Sign up successful")
-                        self.authError = nil
-                    }
-                }
+            if let error = error {
+                // Update authError when there's an error
+                self.authError = error.localizedDescription
+            } else {
+                // Reset authError on success
+                self.authError = nil
+                self.signedIn = true // Update signedIn status
             }
         }
     }
 
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { _, error in
-            // Handle errors or success
             if let error = error {
-                // Handle error
-                print("Error signing in:", error.localizedDescription)
+                // Update authError when there's an error
+                self.authError = error.localizedDescription
             } else {
-                // Handle success
-                print("Sign in successful")
+                // Reset authError on success
+                self.authError = nil
+                self.signedIn = true // Update signedIn status
             }
         }
     }
@@ -49,8 +44,9 @@ class AuthViewModel: ObservableObject {
         do {
             try Auth.auth().signOut()
             self.signedIn = false
-        } catch {
-            print("Error signing out")
+        } catch let signOutError {
+            // Update authError when there's an error
+            self.authError = signOutError.localizedDescription
         }
     }
 }

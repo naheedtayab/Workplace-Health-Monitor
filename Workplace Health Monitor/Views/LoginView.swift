@@ -66,9 +66,14 @@ struct LoginView: View {
             }
             .padding(.top, 50)
         }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
-        }
+        .alert("Error", isPresented: Binding<Bool>(
+            get: { self.authViewModel.authError != nil },
+            set: { _ in self.authViewModel.authError = nil }
+        ), actions: {
+            Button("OK", role: .cancel) {}
+        }, message: {
+            Text(self.authViewModel.authError ?? "Unknown error")
+        })
     }
 }
 
