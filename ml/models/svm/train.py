@@ -4,10 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from preprocess import preprocess_data
 
-# Import the sklearn SVM model
 from model import ActivitySVM as SklearnSVM
-
-# Import the custom SVM model
 from custom_svm import SVM as CustomSVM
 
 

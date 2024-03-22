@@ -1,6 +1,6 @@
 import coremltools
 from sklearn.ensemble import RandomForestClassifier
-import joblib  # For loading/saving scikit-learn models
+import joblib
 
 rf_model = joblib.load("random_forest_model.joblib")
 
@@ -21,8 +21,8 @@ coreml_model = coremltools.converters.sklearn.convert(
         "GPS_Lat",
         "GPS_Long",
         "Pedometer",
-    ],  # Adjust based on your actual feature names
-    output_feature_names=["predictedActivity"],
+    ],
+    output_feature_names=["Activity"],
 )
 
 # Save the CoreML model

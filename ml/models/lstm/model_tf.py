@@ -3,13 +3,12 @@ import pandas as pd
 import tensorflow as tf
 from keras.layers import LSTM, Dense, Dropout, Sequential
 from keras.optimizers import Adam
+from keras.utils import to_categorical
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
-from tensorflow.keras.utils import to_categorical
 import argparse
 import joblib  # For saving preprocessing objects
 
-# Configuration parameters
 CONFIG = {
     "sensor_columns": [
         "Acc_X",

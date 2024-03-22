@@ -15,13 +15,6 @@ struct MotionActivityView: View {
                 .fontWeight(.bold)
             Spacer()
         }
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
     }
 }
 

@@ -1,12 +1,3 @@
-//
-//  StepCounterPushNotifView.swift
-//  Workplace Health Monitor
-//
-//  Created by Naheed on 01/12/2023.
-//
-
-// Extend your existing StepCounterViewModel
-
 import Foundation
 import SwiftUI
 import HealthKit
@@ -29,7 +20,6 @@ extension StepCounterViewModel {
                             self.sendLocalNotification()
                         }
                     }
-                    // Handle denial or error
                 }
             }
         }
@@ -45,14 +35,11 @@ extension StepCounterViewModel {
 
         notificationCenter.add(request) { error in
             if let error = error {
-                // Handle any errors
                 print("Error scheduling notification: \(error)")
             }
         }
     }
 }
-
-// Update your StepCounterView
 
 struct StepCounterView: View {
     @ObservedObject var viewModel = StepCounterViewModel()

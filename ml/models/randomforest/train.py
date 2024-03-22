@@ -18,7 +18,6 @@ def main():
     a Random Forest model on sensor data. This includes data preprocessing,
     model training, and evaluation using various metrics.
     """
-    # Set up argument parsing for command line interaction
     parser = argparse.ArgumentParser(
         description="Train and evaluate a Random Forest model on sensor data."
     )

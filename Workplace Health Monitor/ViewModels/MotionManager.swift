@@ -2,7 +2,6 @@ import Combine
 import CoreMotion
 
 class MotionManager: ObservableObject {
-//    private var motionManager: CMMotionManager
     private var motionManager: CMMotionManager = .init()
     private var pedometer: CMPedometer
     private let queue = OperationQueue()
@@ -10,7 +9,6 @@ class MotionManager: ObservableObject {
     
     @Published var accelerometerData: CMAccelerometerData?
     @Published var isWalking: Bool = false
-    // Placeholder for "sedentary" state
     @Published var isSedentary: Bool = false
     
     init() {
@@ -20,13 +18,9 @@ class MotionManager: ObservableObject {
     }
     
     func startMotionUpdates() {
-        // Start accelerometer updates, for example
-        // This is highly simplified; actual implementation will depend on your needs
         motionManager.startAccelerometerUpdates(to: .main) { [weak self] data, _ in
             guard let acceleration = data?.acceleration else { return }
             
-            // Placeholder logic for determining if currently sedentary
-            // This would instead feed data into your ML model
             self?.isSedentary = (abs(acceleration.x) + abs(acceleration.y) + abs(acceleration.z)) < 0.05 // Very simplified threshold
         }
     }
@@ -39,9 +33,8 @@ class MotionManager: ObservableObject {
 
     func startSensors() {
         // Start accelerometer updates
-        print("working")
         if motionManager.isAccelerometerAvailable {
-            motionManager.accelerometerUpdateInterval = 1.0 / 60.0 // Adjust frequency as needed
+            motionManager.accelerometerUpdateInterval = 1.0 / 60.0 
             motionManager.startAccelerometerUpdates(to: queue) { [weak self] data, _ in
                 DispatchQueue.main.async {
                     if let acceleration = data?.acceleration {

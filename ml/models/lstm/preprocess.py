@@ -4,7 +4,6 @@ import argparse
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split
 
-# Configuration parameters
 CONFIG = {
     "sensor_columns": [
         "Acc_X",
@@ -91,5 +90,4 @@ if __name__ == "__main__":
         args.data_path
     )
 
-    # Add code here if you want to save or further manipulate the processed data
     print("Preprocessing complete. Data ready for LSTM model.")

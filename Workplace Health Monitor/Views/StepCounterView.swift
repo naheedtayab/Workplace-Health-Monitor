@@ -22,7 +22,6 @@ class StepCounterViewModel: ObservableObject {
                 self.fetchTodaySteps()
                 self.fetchLastHourSteps()
             }
-            // Handle errors or lack of permissions gracefully
         }
     }
 
@@ -106,12 +105,6 @@ class StepCounterViewModel: ObservableObject {
            }
        }
    }
-
-
-
-
-
-// Update your StepCounterView
 
 struct StepCounterView: View {
   @ObservedObject var viewModel = StepCounterViewModel()

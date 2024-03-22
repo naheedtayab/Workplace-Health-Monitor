@@ -4,8 +4,8 @@ import UserNotifications
 struct MainView: View {
     @State private var selectedTab = 0
     @StateObject var motionManager = MotionManager()
-    @StateObject private var userSettings = UserSettings() // Instantiate your UserSettings object
-    @EnvironmentObject var authViewModel: AuthViewModel // Add this line
+    @StateObject private var userSettings = UserSettings() 
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         Group {
@@ -37,8 +37,6 @@ struct MainView: View {
                         }
                 }
             } else {
-                // Present a view that handles user sign in or registration.
-                // Assuming you have a view named LoginView for this purpose:
                 LoginView()
             }
         }

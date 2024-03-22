@@ -9,7 +9,6 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
-            // Background color or image
             Color.blue.opacity(0.1).edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20) {
@@ -18,7 +17,6 @@ struct LoginView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.blue)
                 
-                // Email field
                 TextField("Email", text: $email)
                     .padding()
                     .background(Color.white.opacity(0.7))
@@ -27,14 +25,12 @@ struct LoginView: View {
                     .autocapitalization(.none)
                     .padding(.horizontal, 20)
                 
-                // Password field
                 SecureField("Password", text: $password)
                     .padding()
                     .background(Color.white.opacity(0.7))
                     .cornerRadius(10)
                     .padding(.horizontal, 20)
                 
-                // Login button
                 Button(action: {
                     authViewModel.signIn(email: email, password: password)
                 }) {
@@ -77,7 +73,6 @@ struct LoginView: View {
     }
 }
 
-// Preview
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView().environmentObject(AuthViewModel())

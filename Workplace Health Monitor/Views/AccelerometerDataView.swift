@@ -28,7 +28,6 @@ struct AccelerometerDataView: View {
 
 struct AccelerometerDataView_Previews: PreviewProvider {
     static var previews: some View {
-        // Create a sample instance of MotionManager for the preview
         AccelerometerDataView(motionManager: MotionManager())
     }
 }

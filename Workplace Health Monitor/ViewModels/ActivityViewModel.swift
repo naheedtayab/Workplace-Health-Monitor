@@ -1,11 +1,11 @@
-import Combine // Import Combine if you're using @Published
+import Combine
 import CoreMotion
 import Foundation
 
 class ActivityViewModel: ObservableObject {
     private var motionManager: CMMotionActivityManager?
     @Published var activity: String = "Unknown"
-    private var inactivityTimer: Timer? // Make sure you have this timer declared
+    private var inactivityTimer: Timer? 
     private var inactiveTimeCount: Int = 0 // Counter for tracking inactivity
     @Published var inactivityDuration: Int = 45 // User-defined duration for inactivity, defaulting to 45 minutes
 
@@ -71,25 +71,3 @@ class ActivityViewModel: ObservableObject {
     }
 }
 
-//    private func startMonitoring() {
-//        guard CMMotionActivityManager.isActivityAvailable() else {
-//            activity = "You have no motion."
-//            return
-//        }
-//
-//        motionManager.startActivityUpdates(to: OperationQueue.main) { [weak self] (motionActivity) in
-//            guard let activity = motionActivity else { return }
-//
-//            if activity.walking {
-//                self?.activity = "Walking"
-//            } else if activity.running {
-//                self?.activity = "Running"
-//            } else if activity.stationary {
-//                self?.activity = "Stationary"
-//            } else if activity.automotive {
-//                self?.activity = "In a vehicle"
-//            } else {
-//                self?.activity = "Unknown"
-//            }
-//        }
-//    }

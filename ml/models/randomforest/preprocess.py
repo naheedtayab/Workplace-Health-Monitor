@@ -142,5 +142,4 @@ def preprocess_data(file_path):
     return df
 
 
-# Example usage (uncomment the following line to test the function with your dataset)
 # processed_data = preprocess_data('path_to_your_data.csv')

@@ -1,10 +1,3 @@
-//
-//  HomeView.swift
-//  Workplace Health Monitor
-//
-//  Created by Naheed on 30/11/2023.
-//
-
 import SwiftUI
 
 struct TextView: UIViewRepresentable {
@@ -32,7 +25,7 @@ struct HomeView: View {
                 Text("Workplace Health Monitor")
                     .font(.system(size: 28, weight: .bold, design: .rounded))
                     .foregroundColor(Color.blue)
-                    .padding(.top, 20) // Added padding to move it down slightly
+                    .padding(.top, 20) 
 
                 TextView(text: "Welcome to the Workplace Health Monitor! This app helps you maintain a healthy balance between work and physical activity. It tracks your sedentary time and reminds you to take breaks for walking or stretching, ensuring you stay active throughout your workday.").frame(width: 350, height: 180)
                 
@@ -61,7 +54,7 @@ struct HomeView: View {
                 viewModel.updateElapsedTime()
             }
             .frame(maxWidth: .infinity)
-            .padding(.bottom, 20) // Added padding to the bottom
+            .padding(.bottom, 20) 
         }
 //        .background(Color.white)
         .edgesIgnoringSafeArea(.all)

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var userSettings: UserSettings
-    private let models = ["LSTM", "Random Forest", "SVM", "Apple's Motion"] // The names of your models
+    private let models = ["LSTM", "Random Forest", "SVM", "CoreMotion"] 
 
     var body: some View {
         Form {
