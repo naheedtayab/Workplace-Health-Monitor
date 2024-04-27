@@ -1,29 +1,30 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @EnvironmentObject var userSettings: UserSettings
-    private let models = ["LSTM", "Random Forest", "SVM", "CoreMotion"] 
+    @State private var selectedModel = "LSTM" // Local state for demonstration
+    @State private var breakDuration = 15 // Default value for demo
+    @State private var inactivityDuration = 30 // Default value for demo
 
     var body: some View {
         Form {
             Section(header: Text("Motion Prediction Model")) {
-                Picker("Prediction Model", selection: $userSettings.selectedModel) {
-                    ForEach(models, id: \.self) { model in
-                        Text(model).tag(model)
-                    }
+                Picker("Prediction Model", selection: $selectedModel) {
+                    Text("LSTM").tag("LSTM")
+                    Text("Random Forest").tag("Random Forest")
+                    Text("SVM").tag("SVM")
                 }
                 .pickerStyle(SegmentedPickerStyle())
             }
 
             Section(header: Text("Break Duration")) {
-                Stepper(value: $userSettings.breakDuration, in: 5...60, step: 5) {
-                    Text("\(userSettings.breakDuration) minutes")
+                Stepper(value: $breakDuration, in: 5...60, step: 5) {
+                    Text("\(breakDuration) minutes")
                 }
             }
 
             Section(header: Text("Inactivity Notification")) {
-                Stepper(value: $userSettings.inactivityDuration, in: 15...120, step: 15) {
-                    Text("\(userSettings.inactivityDuration) minutes")
+                Stepper(value: $inactivityDuration, in: 5...60, step: 5) {
+                    Text("\(inactivityDuration) seconds")
                 }
             }
         }

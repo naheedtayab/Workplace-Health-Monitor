@@ -3,13 +3,11 @@ import UserNotifications
 
 struct MainView: View {
     @State private var selectedTab = 0
-    @StateObject var motionManager = MotionManager()
-    @StateObject private var userSettings = UserSettings() 
     @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         Group {
-            if authViewModel.signedIn { // Check if the user is signed in
+            if authViewModel.signedIn {
                 TabView(selection: $selectedTab) {
                     HomeView()
                         .tabItem {
@@ -21,20 +19,15 @@ struct MainView: View {
                             Label("Motion Activity", systemImage: "waveform.path.ecg")
                         }.tag(1)
                     
-                    StepCounterView()
+                    SensorView()
                         .tabItem {
-                            Label("Step Counter", systemImage: "figure.walk")
+                            Label("Live Sensors", systemImage: "figure.walk")
                         }.tag(2)
                     
-                    AccelerometerDataView(motionManager: motionManager)
-                        .tabItem {
-                            Label("Accelerometer", systemImage: "waveform.path.ecg")
-                        }.tag(3)
-                    
-                    SettingsView().environmentObject(userSettings)
+                    SettingsView()
                         .tabItem {
                             Label("Settings", systemImage: "gearshape")
-                        }
+                        }.tag(3)
                 }
             } else {
                 LoginView()
@@ -43,6 +36,9 @@ struct MainView: View {
     }
 }
 
-#Preview {
-    MainView()
+// Preview
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView().environmentObject(AuthViewModel())
+    }
 }

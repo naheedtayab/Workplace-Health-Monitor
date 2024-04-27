@@ -12,6 +12,7 @@
     <string>We need access to motion data to count your steps and encourage physical activity.</string>
     <key>NSHealthUpdateUsageDescription</key>
     <string>This app needs to save your workout data to HealthKit for comprehensive health tracking.</string>
-
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app uses your location to provide live sensor data readings for environmental analysis.</string>
 </dict>
 </plist>

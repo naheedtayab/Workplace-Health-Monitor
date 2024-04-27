@@ -1,23 +1,21 @@
 import SwiftUI
 
 struct MotionActivityView: View {
-    @ObservedObject var viewModel = ActivityViewModel()
-    
+    @StateObject private var viewModel = MotionActivityViewModel()
+
     var body: some View {
         VStack {
-            VStack {
-                Text("Workplace Health Monitor").font(.title)
-            }
-            Spacer()
-            Text("Current Activity:")
-            Text(viewModel.activity)
+            Text("Predicted State:")
+            Text(viewModel.currentActivity)
                 .font(.title)
                 .fontWeight(.bold)
-            Spacer()
+                .padding()
         }
     }
 }
 
-#Preview {
-    MotionActivityView()
+struct MotionActivityView_Previews: PreviewProvider {
+    static var previews: some View {
+        MotionActivityView()
+    }
 }
